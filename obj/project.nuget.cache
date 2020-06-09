@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M8vkSSsMzCuB/N/52Ffi0NEfg9PCkPmbY3BVNUxHmof2R0/ULUsa0LoXHRNy9GRvD+DFe3moRGqapcjvt2ADOQ==",
+  "dgSpecHash": "/fMzmLnvbCAB4agIEQOBOcz9UItQburypmJIdFFxGq3/wMhcOfSqeaDIDTkDess1M0chTxcxKU/U2KRvmidcyg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Covid19\\Covid19\\Covid19.csproj",
+  "projectFilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Covid19\\Covid19.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marco\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.3\\microsoft.aspnetcore.cryptography.internal.3.1.3.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.3\\microsoft.aspnetcore.cryptography.keyderivation.3.1.3.nupkg.sha512",
@@ -64,7 +64,7 @@
     "C:\\Users\\marco\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\marco\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\marco\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

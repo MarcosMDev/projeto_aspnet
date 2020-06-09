@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MvcTips.Data;
 using MvcTips.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Covid19.Controllers
 {
@@ -44,6 +45,7 @@ namespace Covid19.Controllers
         }
 
         // GET: Tips/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();

@@ -7,26 +7,48 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Covid19.Models;
 
+using Microsoft.EntityFrameworkCore;
+using MvcTips.Data;
+
+using APIConsume.Models;
+using Newtonsoft.Json;
+using System.Net.Http;
+
 namespace Covid19.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly MvcTipsContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+
+        public HomeController(ILogger<HomeController> logger, MvcTipsContext context)
         {
             _logger = logger;
+            _context = context;
+        }
+        
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Tips.ToListAsync());
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+        public IActionResult Details(int? id) => Redirect("/Tips/Details/" + id);
 
-        public IActionResult Privacy()
+        public async Task<IActionResult> Tracker()
         {
-            return View();
+            List<Cases> Cases = new List<Cases>();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("https://covid19-brazil-api.now.sh/api/report/v1/Brazil"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    Cases = JsonConvert.DeserializeObject<List<Cases>>(apiResponse);
+                }
+            }
+            return View(Cases); 
         }
+        public IActionResult Privacy => View();
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
