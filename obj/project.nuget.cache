@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/fMzmLnvbCAB4agIEQOBOcz9UItQburypmJIdFFxGq3/wMhcOfSqeaDIDTkDess1M0chTxcxKU/U2KRvmidcyg==",
+  "dgSpecHash": "Q2jzY961fzF7BRlbDLfP+urzT3mWRBHtq+lqN/IWXHq6HaPCEr/QY0eHQ1awhqR1tXwoS9+GwAtUqLXo3UtIqA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Covid19\\Covid19.csproj",
+  "projectFilePath": "C:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Covid19\\Covid19.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marco\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.3\\microsoft.aspnetcore.cryptography.internal.3.1.3.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.3\\microsoft.aspnetcore.cryptography.keyderivation.3.1.3.nupkg.sha512",

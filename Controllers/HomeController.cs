@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Covid19.Models;
+using Data.ViewModels;
 
 using Microsoft.EntityFrameworkCore;
 using MvcTips.Data;
@@ -30,24 +31,25 @@ namespace Covid19.Controllers
         
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Tips.ToListAsync());
-        }
-
-        public IActionResult Details(int? id) => Redirect("/Tips/Details/" + id);
-
-        public async Task<IActionResult> Tracker()
-        {
             List<Cases> Cases = new List<Cases>();
             using (var httpClient = new HttpClient())
             {
-                using (var response = await httpClient.GetAsync("https://covid19-brazil-api.now.sh/api/report/v1/Brazil"))
+                using (var response = await httpClient.GetAsync("https://api.covid19api.com/total/country/brazil"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
                     Cases = JsonConvert.DeserializeObject<List<Cases>>(apiResponse);
                 }
             }
-            return View(Cases); 
+
+            // DataViewModel dataViewModel = new DataViewModel();
+
+            // dataViewModel.Tips = 
+            // dataViewModel.Data = Cases
+            
+            return(View(await _context.Tips.ToListAsync()));
         }
+        public IActionResult Details(int? id) => Redirect("/Tips/Details/" + id);
+        
         public IActionResult Privacy => View();
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

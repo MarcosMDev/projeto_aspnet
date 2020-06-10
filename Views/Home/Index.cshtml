@@ -1,10 +1,11 @@
 ﻿@model IEnumerable<MvcTips.Models.Tips>
 
+
 @{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container-sm">
+<main class="container-sm">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -12,7 +13,7 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            @for (var i = 0; i < Model.Count(); i++) {
+            @for (var i = 0; i < 3; i++) {
                 if (i == 0) {
                     <div class="carousel-item active">
                         <img src='@Model.ElementAt(i).UrlImg' class="d-block w-100" alt="...">
@@ -36,7 +37,7 @@
         </div>
     </div>
     <hr />
-    <div class="d-flex flex-wrap bd-highlight mb-3 justify-content-start">
+    <article class="d-flex flex-wrap bd-highlight mb-3 justify-content-start">
         @foreach (var item in Model) {
             <div class="p-2 bd-highlight" style="width: 18rem;">
                 <img src='@Html.DisplayFor(modelItem => item.UrlImg)' class="card-img-top" alt="...">
@@ -47,14 +48,14 @@
                 </div>
             </div>
         }
-    </div>
+    </article>
     <hr />
-    <div class="d-flex flex-wrap bd-highlight mb-3 justify-content-start">
+    <article class="d-flex flex-wrap bd-highlight mb-3 justify-content-start">
         <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
             <div class="card-header">Header</div>
             <div class="card-body">
                 <h5 class="card-title">TEste</h5>
             </div>
         </div>
-    </div>
-</div>
+    </article>
+</main>
