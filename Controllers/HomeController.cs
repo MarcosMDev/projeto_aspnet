@@ -41,12 +41,12 @@ namespace Covid19.Controllers
                 }
             }
 
-            // DataViewModel dataViewModel = new DataViewModel();
+            DataViewModel dataViewModel = new DataViewModel();
 
-            // dataViewModel.Tips = 
-            // dataViewModel.Data = Cases
+            dataViewModel.Tips = await _context.Tips.ToListAsync();
+            dataViewModel.Data = Cases;
             
-            return(View(await _context.Tips.ToListAsync()));
+            return(View(dataViewModel));
         }
         public IActionResult Details(int? id) => Redirect("/Tips/Details/" + id);
         

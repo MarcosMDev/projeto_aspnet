@@ -1,4 +1,11 @@
-﻿@model IEnumerable<MvcTips.Models.Tips>
+﻿@model Data.ViewModels.DataViewModel;
+
+@{ string date =  @Model.Data.ElementAt(Model.Data.Count()-1).Date;}
+@{ string dateParse = DateTime.Parse(date).ToString("dd-MM-yyyy AS HH:mm:ss");}
+
+@{ float mortes  = @Model.Data.ElementAt(Model.Data.Count()-1).Deaths;}
+@{ float confirmados  = @Model.Data.ElementAt(Model.Data.Count()-1).Confirmed;}
+@{ float percentual  = (mortes/confirmados) * 100;}
 
 
 @{
@@ -16,20 +23,20 @@
             @for (var i = 0; i < 3; i++) {
                 if (i == 0) {
                     <div class="carousel-item active">
-                        <img src='@Model.ElementAt(i).UrlImg' class="d-block w-100" alt="...">
+                        <img src='@Model.Tips.ElementAt(i).UrlImg' class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block bg-info">
-                            <h5 class="text-light">@Model.ElementAt(i).Title</h5>
-                            <p class="text-light">@Model.ElementAt(i).Resume</p>
-                            <a asp-action="Details" asp-route-id="@Model.ElementAt(i).Id" class="text-secondary">Leia Mais</a>
+                            <h5 class="text-light">@Model.Tips.ElementAt(i).Title</h5>
+                            <p class="text-light">@Model.Tips.ElementAt(i).Resume</p>
+                            <a asp-action="Details" asp-route-id="@Model.Tips.ElementAt(i).Id" class="text-secondary">Leia Mais</a>
                         </div>
                     </div>
                 } else {
                     <div class="carousel-item">
-                        <img src='@Model.ElementAt(i).UrlImg' class="d-block w-100" alt="...">
+                        <img src='@Model.Tips.ElementAt(i).UrlImg' class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block bg-info">
-                            <h5 class="text-light">@Model.ElementAt(i).Title</h5>
-                            <p class="text-light">@Model.ElementAt(i).Resume</p>
-                            <a asp-action="Details" asp-route-id="@Model.ElementAt(i).Id" class="text-secondary">Leia Mais</a>
+                            <h5 class="text-light">@Model.Tips.ElementAt(i).Title</h5>
+                            <p class="text-light">@Model.Tips.ElementAt(i).Resume</p>
+                            <a asp-action="Details" asp-route-id="@Model.Tips.ElementAt(i).Id" class="text-secondary">Leia Mais</a>
                         </div>
                     </div>
                 }
@@ -38,7 +45,7 @@
     </div>
     <hr />
     <article class="d-flex flex-wrap bd-highlight mb-3 justify-content-start">
-        @foreach (var item in Model) {
+        @foreach (var item in Model.Tips) {
             <div class="p-2 bd-highlight" style="width: 18rem;">
                 <img src='@Html.DisplayFor(modelItem => item.UrlImg)' class="card-img-top" alt="...">
                 <div class="card-body">
@@ -50,12 +57,48 @@
         }
     </article>
     <hr />
-    <article class="d-flex flex-wrap bd-highlight mb-3 justify-content-start">
-        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-                <h5 class="card-title">TEste</h5>
+    <h1 style="text-align: center;">Casos no Brasil</h1>
+    <div class="row row-cols-1 row-cols-md-3 mt-5">
+        <div class="col mb-4">
+            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header">Casos confirmados</div>
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Data.ElementAt(Model.Data.Count()-1).Confirmed</h5>
+                </div>
             </div>
         </div>
-    </article>
+        <div class="col mb-4">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">Mortes</div>
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Data.ElementAt(Model.Data.Count()-1).Deaths</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header">Doentes</div>
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Data.ElementAt(Model.Data.Count()-1).Active</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Curados</div>
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Data.ElementAt(Model.Data.Count()-1).Recovered</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                <div class="card-header">Mortalidade</div>
+                <div class="card-body">
+                    <h5 class="card-title">@percentual.ToString("N2")%</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="font-weight-bolder text-dark" style="text-align: center;">Atualizado em: @dateParse</p>
 </main>

@@ -9,7 +9,7 @@ namespace Data.ViewModels
 {
     public class DataViewModel
     {
-        public Tips Tips { get; set; }
-        public Cases Data { get; set; }
+        public List<Tips> Tips { get; set; }
+        public List<Cases> Data { get; set; }
     }
 }
