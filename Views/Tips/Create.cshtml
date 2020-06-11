@@ -1,5 +1,7 @@
 @model MvcTips.Models.Tips
-
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 @{
     ViewData["Title"] = "Create";
 }
@@ -33,8 +35,8 @@
                 <span asp-validation-for="Content" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Autor" class="control-label"></label>
-                <input asp-for="Autor" class="form-control" />
+                
+                <input asp-for="Autor" class="form-control" type="hidden" value="@User.Identity.Name" />
                 <span asp-validation-for="Autor" class="text-danger"></span>
             </div>
             <div class="form-group">
