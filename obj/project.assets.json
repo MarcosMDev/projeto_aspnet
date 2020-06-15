@@ -8954,19 +8954,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marco\\.nuget\\packages\\": {}
+    "C:\\Users\\Hugo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Covid19\\Covid19.csproj",
+      "projectUniqueName": "c:\\Users\\Hugo\\Desktop\\projeto_aspnet\\Covid19.csproj",
       "projectName": "Covid19",
-      "projectPath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Covid19\\Covid19.csproj",
-      "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Covid19\\obj\\",
+      "projectPath": "c:\\Users\\Hugo\\Desktop\\projeto_aspnet\\Covid19.csproj",
+      "packagesPath": "C:\\Users\\Hugo\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\Hugo\\Desktop\\projeto_aspnet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\marco\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Hugo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
