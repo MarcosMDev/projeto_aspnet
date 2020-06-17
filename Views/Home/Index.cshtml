@@ -41,6 +41,11 @@
                     </div>
                 }
             }
+            @if(@Model.Tips.Count() == 0) {  
+                <div class="carousel-item active">
+                    <iframe width="1110" height="720" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            };
         </div>
     </div>
     <hr />
