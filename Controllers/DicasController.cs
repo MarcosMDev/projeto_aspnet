@@ -42,5 +42,7 @@ namespace Covid19.Controllers
 
             return View(tips);
         }
+
+        
     }
 }
