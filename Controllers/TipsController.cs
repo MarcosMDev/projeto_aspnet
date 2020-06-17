@@ -62,7 +62,7 @@ namespace Covid19.Controllers
             {
                 _context.Add(tips);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return Redirect("/Dicas");
             }
             return View(tips);
         }
