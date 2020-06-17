@@ -1,0 +1,17 @@
+@model MvcTips.Models.Tips
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<div class="container">
+    <div class="card mb-3">
+        <img  src="@Model.UrlImg" class="card-img-top" alt="...">
+        <hr />
+        <div class="card-body">
+            <h5 class="card-title">@Model.Title</h5>
+            <p class="card-text">@Model.Content</p>
+            <p class="card-text"><small class="text-muted">@Model.Autor</small></p>
+        </div>
+    </div>
+</div>

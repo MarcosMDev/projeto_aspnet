@@ -48,7 +48,7 @@ namespace Covid19.Controllers
             
             return(View(dataViewModel));
         }
-        public IActionResult Details(int? id) => Redirect("/Tips/Details/" + id);
+        public IActionResult Details(int? id) => Redirect("/Dicas/Detalhes/" + id);
         
         public IActionResult Privacy => View();
 

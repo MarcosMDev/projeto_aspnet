@@ -1,5 +1,18 @@
+@model IEnumerable<MvcTips.Models.Tips>
+
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Dicas";
 }
 
-<h1>Seja bem vindo ao index</h1>
+<article class="d-flex flex-wrap bd-highlight mb-3 justify-content-start">
+    @foreach (var item in Model) {
+        <div class="p-2 bd-highlight" style="width: 18rem;">
+            <img src='@Html.DisplayFor(modelItem => item.UrlImg)' class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@Html.DisplayFor(modelItem => item.Title)</h5>
+                <p class="card-text">@Html.DisplayFor(modelItem => item.Resume)</p>
+                <a asp-action="Detalhes" asp-route-id="@item.Id" class="btn btn-primary">Leia Mais</a>
+            </div>
+        </div>
+    }
+</article>

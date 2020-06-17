@@ -20546,11 +20546,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Dicas\\Dicas.cshtml",
-      "TargetPath": "Views\\Dicas\\Dicas.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
@@ -20561,8 +20556,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Dicas\\Detalhes.cshtml",
+      "TargetPath": "Views\\Dicas\\Detalhes.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -44,26 +44,13 @@
         </div>
     </div>
     <hr />
-    <article class="d-flex flex-wrap bd-highlight mb-3 justify-content-start">
-        @foreach (var item in Model.Tips) {
-            <div class="p-2 bd-highlight" style="width: 18rem;">
-                <img src='@Html.DisplayFor(modelItem => item.UrlImg)' class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.Title)</h5>
-                    <p class="card-text">@Html.DisplayFor(modelItem => item.Resume)</p>
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Leia Mais</a>
-                </div>
-            </div>
-        }
-    </article>
-    <hr />
     <h1 style="text-align: center;">Casos no Brasil</h1>
     <div class="row row-cols-1 row-cols-md-3 mt-5">
         <div class="col mb-4">
             <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
                 <div class="card-header">Casos confirmados</div>
                 <div class="card-body">
-                    <h5 class="card-title">@Model.Data.ElementAt(Model.Data.Count()-1).Confirmed</h5>
+                    <h5 class="card-title">@Model.Data.ElementAt(Model.Data.Count()-1).Confirmed.ToString("N2")</h5>
                 </div>
             </div>
         </div>
@@ -71,7 +58,7 @@
             <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
                 <div class="card-header">Mortes</div>
                 <div class="card-body">
-                    <h5 class="card-title">@Model.Data.ElementAt(Model.Data.Count()-1).Deaths</h5>
+                    <h5 class="card-title">@Model.Data.ElementAt(Model.Data.Count()-1).Deaths.ToString("N2")</h5>
                 </div>
             </div>
         </div>
@@ -79,7 +66,7 @@
             <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
                 <div class="card-header">Doentes</div>
                 <div class="card-body">
-                    <h5 class="card-title">@Model.Data.ElementAt(Model.Data.Count()-1).Active</h5>
+                    <h5 class="card-title">@Model.Data.ElementAt(Model.Data.Count()-1).Active.ToString("N2")</h5>
                 </div>
             </div>
         </div>
@@ -87,7 +74,7 @@
             <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
                 <div class="card-header">Curados</div>
                 <div class="card-body">
-                    <h5 class="card-title">@Model.Data.ElementAt(Model.Data.Count()-1).Recovered</h5>
+                    <h5 class="card-title">@Model.Data.ElementAt(Model.Data.Count()-1).Recovered.ToString("N2")</h5>
                 </div>
             </div>
         </div>
