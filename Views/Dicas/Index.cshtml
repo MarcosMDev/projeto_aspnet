@@ -3,15 +3,37 @@
 @{
     ViewData["Title"] = "Dicas";
 }
-<form asp-controller="Dicas" asp-action="Index" method="get">
-    <p>
-        <select asp-for="TipsAutor" asp-items="Model.Autors">
-            <option value="">All</option>
-        </select>
-        Title: <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Filter" />
-    </p>
-</form>
+
+@if (Model.Tips.Count() == 0) {
+    <form asp-controller="Dicas" asp-action="Index" method="get">
+        <div class="input-group mb-3 row">
+            <select asp-for="TipsAutor" asp-items="Model.Autors" class="custom-select col-md-2" id="inputGroupSelect01">
+                <option value="" selected>Todos</option>
+            </select>
+            <input type="text" asp-for="SearchString" class="col-md-4"/>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2" value="Filter">Filtrar</button>
+            </div>
+        </div>
+    </form>
+    <img src="https://svgur.com/i/M8w.svg" alt="vazio">
+}
+
+@if (Model.Tips.Count != 0) {
+    <form asp-controller="Dicas" asp-action="Index" method="get">
+        <div class="input-group mb-3 row">
+            <select asp-for="TipsAutor" asp-items="Model.Autors" class="custom-select col-md-2" id="inputGroupSelect01">
+                <option value="" selected>Todos</option>
+            </select>
+            <input type="text" asp-for="SearchString" class="col-md-4"/>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2" value="Filter">Filtrar</button>
+            </div>
+        </div>
+    </form>
+}
+
+
 <article class="d-flex flex-wrap bd-highlight mb-3 justify-Tips.content-start">
     @foreach (var item in Model.Tips) {
         <div class="p-2 bd-highlight" style="width: 18rem;">

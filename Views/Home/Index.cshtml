@@ -14,11 +14,6 @@
 
 <main class="container-sm">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
         <div class="carousel-inner">
             @for (var i = 0; i < @Model.Tips.Count(); i++) {
                 if (i == 0) {
@@ -45,7 +40,7 @@
                 <div class="carousel-item active">
                     <iframe width="1110" height="720" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-            };
+            }
         </div>
     </div>
     <hr />
@@ -68,7 +63,7 @@
             </div>
         </div>
         <div class="col mb-4">
-            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+            <div class="card text-white  bg-warning mb-3" style="max-width: 18rem;">
                 <div class="card-header">Doentes</div>
                 <div class="card-body">
                     <h5 class="card-title">@Model.Data.ElementAt(Model.Data.Count()-1).Active.ToString("N2")</h5>
@@ -84,7 +79,7 @@
             </div>
         </div>
         <div class="col mb-4">
-            <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
                 <div class="card-header">Mortalidade</div>
                 <div class="card-body">
                     <h5 class="card-title">@percentual.ToString("N2")%</h5>
