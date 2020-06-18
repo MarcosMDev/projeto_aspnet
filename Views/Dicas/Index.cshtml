@@ -1,11 +1,19 @@
-@model IEnumerable<MvcTips.Models.Tips>
+@model MvcFill.ViewModels.Fill
 
 @{
     ViewData["Title"] = "Dicas";
 }
-
-<article class="d-flex flex-wrap bd-highlight mb-3 justify-content-start">
-    @foreach (var item in Model) {
+<form asp-controller="Dicas" asp-action="Index" method="get">
+    <p>
+        <select asp-for="TipsAutor" asp-items="Model.Autors">
+            <option value="">All</option>
+        </select>
+        Title: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+<article class="d-flex flex-wrap bd-highlight mb-3 justify-Tips.content-start">
+    @foreach (var item in Model.Tips) {
         <div class="p-2 bd-highlight" style="width: 18rem;">
             <img src='@Html.DisplayFor(modelItem => item.UrlImg)' class="card-img-top" alt="...">
             <div class="card-body">
