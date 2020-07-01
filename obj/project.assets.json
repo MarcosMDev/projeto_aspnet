@@ -8959,11 +8959,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Hugo\\Desktop\\Projetos\\ProjetoAspNet - Marcola\\Covid19.csproj",
+      "projectUniqueName": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Covid19.csproj",
       "projectName": "Covid19",
-      "projectPath": "c:\\Users\\Hugo\\Desktop\\Projetos\\ProjetoAspNet - Marcola\\Covid19.csproj",
+      "projectPath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Covid19.csproj",
       "packagesPath": "C:\\Users\\Hugo\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Hugo\\Desktop\\Projetos\\ProjetoAspNet - Marcola\\obj\\",
+      "outputPath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hugo\\AppData\\Roaming\\NuGet\\NuGet.Config"

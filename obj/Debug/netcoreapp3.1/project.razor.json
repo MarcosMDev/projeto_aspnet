@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Covid19.csproj",
+  "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Covid19.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,108 +20521,108 @@
   "RootNamespace": "Covid19",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Tips\\Details.cshtml",
-      "TargetPath": "Views\\Tips\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Shared\\_LoginPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Tips\\Delete.cshtml",
-      "TargetPath": "Views\\Tips\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Dicas\\Detalhes.cshtml",
-      "TargetPath": "Views\\Dicas\\Detalhes.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Tips\\Index.cshtml",
-      "TargetPath": "Views\\Tips\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Dicas\\Index.cshtml",
-      "TargetPath": "Views\\Dicas\\Index.cshtml",
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Views\\Dicas\\Detalhes.cshtml",
+      "TargetPath": "Views\\Dicas\\Detalhes.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Views\\Tips\\Delete.cshtml",
+      "TargetPath": "Views\\Tips\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Tips\\Create.cshtml",
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Views\\Tips\\Create.cshtml",
       "TargetPath": "Views\\Tips\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\marco\\Documents\\projetos\\projeto_aspnet\\Views\\Tips\\Edit.cshtml",
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Views\\Tips\\Details.cshtml",
+      "TargetPath": "Views\\Tips\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Views\\Tips\\Edit.cshtml",
       "TargetPath": "Views\\Tips\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Views\\Dicas\\Index.cshtml",
+      "TargetPath": "Views\\Dicas\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Views\\Tips\\Index.cshtml",
+      "TargetPath": "Views\\Tips\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Hugo\\Desktop\\Projetos\\projeto_aspnet\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],
